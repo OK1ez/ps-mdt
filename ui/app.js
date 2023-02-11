@@ -669,7 +669,7 @@ $(document).ready(() => {
     ".manage-incidents-create",
     function () {
       let tempalte =
-        "📝 Summary:\n\n[Insert Report Summary Here]\n\n🧍 Hostage: [Name Here]\n\n🔪 Weapons/Items Confiscated:\n\n· [Insert List Here]\n\n-----\n💸 Fine:\n⌚ Sentence:\n-----";
+        "Summary:\n\n[Insert Report Summary Here]";
       $("#manage-incidents-title-input").val(
         "Name - Charge - " + $(".date").html()
       );
@@ -4286,6 +4286,7 @@ $(document).ready(() => {
         $(".dispatch-items")[0].scrollHeight
       );
     } else if (eventData.type == "call") {
+      //ClearMap(); // If you want to only have the recent call on the map, uncomment this line
       const value = eventData.data;
       DispatchMAP(value);
       if (value && value.job.includes(playerJob)) {
