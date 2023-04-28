@@ -34,6 +34,7 @@ input::-webkit-inner-spin-button {
 }
 
 .dashboard-page-container  {
+    /* background-color: rgb(40, 40, 40); */
     background-color: rgb(40, 40, 40);
     
     border-radius: 15px;
@@ -110,37 +111,6 @@ input::-webkit-inner-spin-button {
     display: none;
 }
 
-.sop-page-container {
-    background-color: rgb(40, 40, 40);
-    border-radius: 15px;
-    position: absolute; 
-    width: 80.5%;
-    height: 80.5%;
-    border: 10px solid rgb(22, 22, 22);
-    left: 10.0%;
-    top: 10.0%;
-    display: none;
-}
-
-.sop-embed {
-    background-color: var(--color-1);
-    border: 2px solid var(--color-3);
-    display: flex;
-    flex-direction: column;
-    height: 96.5%;
-    width: 85%;
-    margin: auto;
-    overflow: hidden;
-}
-
-.sop-embed iframe {
-    height: 96.5%;
-    width: 98%;
-    margin: auto;
-    border: none;
-    outline: none;
-}
-
 .dmv-page-container {
     background-color: rgb(40, 40, 40);
     border-radius: 15px;
@@ -214,6 +184,7 @@ input::-webkit-inner-spin-button {
 }
 
 .nav-menu {
+  
 
     min-width: 22.5vh;
     height: 100%;
@@ -222,7 +193,7 @@ input::-webkit-inner-spin-button {
     user-select: none;
     margin-left: 10px;
     height: 5vh;
-    margin-top: -50px;
+
     width: 86.5%;
     position: absolute;
 
@@ -706,16 +677,56 @@ span.bulletin-item-info[contenteditable]:empty::before {
     user-select: none;
 }
 
+.calls-search-title {
+    background-color: var(--color-3);
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-right: 2px;
+    margin-left: 10px;
+    margin-left: 13px;
+    width: 95%;
+    align-items: center;
+    user-select: none;
+}
+
+.calls-search-input {
+    background-color: var(--color-3);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    width: 95%;
+    align-items: center;
+    user-select: none;
+    display: none;
+}
+
+#calls-search-input {
+    outline: none;
+    border: none;
+    width: 95%;
+    color: white;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0);
+    margin: auto;
+}
+
+#calls-search-input::placeholder {
+    color: white;
+}
+
 #police-count {
     background-color: #093095;
-}
-
-#bcso-count {
-background-color: #cc7e25;;
-}
-
-#sasp-count {
-background-color: #2589cc;
 }
 
 #ems-count {
@@ -756,6 +767,7 @@ background-color: #2589cc;
     align-items: center;
     margin-bottom: 5px;
 }
+
 
 #draggedItem {
     position: absolute;
@@ -1115,14 +1127,6 @@ a {
     margin-bottom: 5px;
 }
 
-.profile-criminal-tags {
-    display: flex;
-    overflow-x: auto;
-    width: 100%;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
 .profile-tag {
     margin: auto;
     margin-left: 0px;
@@ -1210,15 +1214,6 @@ a {
     display: block;
 }
 
-.manage-profile-active-warrant {
-    display: none;
-    margin: auto;
-    padding: 8px;
-    color: red;
-    font-weight: bold;
-    font-size: 20px;
-}
-
 .manage-profile-save:hover {
     background-color: #1caa28;
 }
@@ -1298,40 +1293,6 @@ a {
 }
 
 .manage-profile-dob-input {
-    border: none;
-    outline: none;
-    margin-left: 2.5px;
-    font-size: 16px;
-    margin-top: 2px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0);
-}
-
-.manage-profile-fingerprint {
-    color: white;
-    margin-left: 10px;
-    font-size: 15px;
-    user-select: none;
-}
-
-.manage-profile-fingerprint-input {
-    border: none;
-    outline: none;
-    margin-left: 2.5px;
-    font-size: 16px;
-    margin-top: 2px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0);
-}
-
-.manage-profile-phonenumber {
-    color: white;
-    margin-left: 10px;
-    font-size: 15px;
-    user-select: none;
-}
-
-.manage-profile-phonenumber-input {
     border: none;
     outline: none;
     margin-left: 2.5px;
@@ -1525,7 +1486,6 @@ a {
     display: inline-block;
     text-decoration: none;
     margin: auto;
-    margin-bottom: 5px;
     margin-left: 0px;
     margin-right: 10px;
     margin-top: 10px;
@@ -1739,39 +1699,14 @@ span.tag-input[contenteditable]:empty::before {
     flex-direction: column;
     background-color: var(--color-1);
     width: 100%;
-    height: 100%;
-}
-
-.convictions-known-container, .incidents-known-container {
-    background-color: var(--color-5);
-    width: 95vh;
-    height: 45vh;
-    margin: auto;
+    border: 2px solid rgb(32, 32, 32);
     margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    z-index: 9998;
-    display: none;
-}
-
-.convictions-known-title, .incidents-known-title {
-    background-color: var(--color-4);
-    color: white;
-    font-size: 20px;
-    font-weight: bolder;
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    width: 95%;
-    margin: auto;
-    margin-top: 15px;
-    margin-bottom: 0px;
-    user-select: none;
+    max-height: 200px;
+    overflow: scroll;
 }
 
 .convictions-title {
-    background-color: var(--color-1);
-    border: 2px solid rgb(32, 32, 32);
+    background-color: var(--color-4);
     color: white;
     font-size: 18px;
     font-weight: bolder;
@@ -1779,64 +1714,20 @@ span.tag-input[contenteditable]:empty::before {
     padding-bottom: 5px;
     text-align: center;
     margin: auto;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 0px;
-    width: 100%;
+    width: 95%;
     align-items: center;
     user-select: none;
-}
-
-.convictions-title:hover {
-    background-color: var(--color-3);
+    
 }
 
 .convictions-holder {
-    overflow: scroll;
-    max-height: 87%;
+    overflow: auto;
     margin: auto;
     margin-top: 10px;
     width: 95%;
     user-select: none;
-}
-
-.profile-incidents-title {
-    background-color: var(--color-1);
-    border: 2px solid rgb(32, 32, 32);
-    color: white;
-    font-size: 18px;
-    font-weight: bolder;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    text-align: center;
-    margin: auto;
-    margin-top: 5px;
-    margin-bottom: 0px;
-    width: 100%;
-    align-items: center;
-    user-select: none;
-}
-
-.profile-incidents-title:hover {
-    background-color: var(--color-3);
-}
-
-.profile-incidents-holder {
-    overflow: scroll;
-    max-height: 87%;
-    margin: auto;
-    margin-top: 5px;
-    width: 95%;
-    user-select: none;
-}
-
-.incident-number {
-    padding-right: 8px;
-}
-
-.incident-timestamp {
-    color: #303030;
-    font-size: 10px;
-    font-weight: 500;
 }
 
 .loader {
@@ -1895,7 +1786,7 @@ span.tag-input[contenteditable]:empty::before {
     margin: 0;
     border: 1px solid var(--color-3);
     background: var(--color-5);
-    z-index: 9999;
+    z-index: 100;
     border-radius: 3px;
     box-shadow: 1px 1px 4px rgba(0,0,0,.2);
     opacity: 0;
@@ -1991,22 +1882,6 @@ span.tag-input[contenteditable]:empty::before {
 
 .copy-image-link:hover {
     background-color: #099517;
-}
-
-.view-incident:hover {
-    background-color: var(--color-3);
-}
-
-.view-incident2:hover {
-    background-color: var(--color-3);
-}
-
-.make-waypoint:hover {
-    background-color: var(--color-3);
-}
-
-.view-profile:hover {
-    background-color: var(--color-3);
 }
 
 .gallery-upload-input {
@@ -2413,7 +2288,6 @@ span.tag-input[contenteditable]:empty::before {
 .manage-incidents-officers-container {
     display: flex;
     flex-direction: column;
-    border: 2px solid rgb(32, 32, 32);
     color: white;
     font-size: 18px;
     font-weight: bolder;
@@ -2474,10 +2348,28 @@ span.tag-input[contenteditable]:empty::before {
     user-select: none;
 }
 
+.manage-incidents-officers {
+    display: inline-block;
+    text-decoration: none;
+    margin: auto;
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 10px;
+    color: black;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: white;
+    user-select: none;
+    width: fit-content;
+}
+
 .manage-incidents-civilians-container {
     display: flex;
     flex-direction: column;
-    border: 2px solid rgb(32, 32, 32);
     color: white;
     font-size: 18px;
     font-weight: bolder;
@@ -2538,10 +2430,28 @@ span.tag-input[contenteditable]:empty::before {
     user-select: none;
 }
 
+.manage-incidents-civilians {
+    display: inline-block;
+    text-decoration: none;
+    margin: auto;
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 10px;
+    color: black;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: white;
+    user-select: none;
+    width: fit-content;
+}
+
 .manage-incidents-evidence-container {
     display: flex;
     flex-direction: column;
-    border: 2px solid rgb(32, 32, 32);
     color: white;
     font-size: 18px;
     font-weight: bolder;
@@ -2617,6 +2527,57 @@ span.tag-incident-input[contenteditable]:empty::before {
     margin: auto;
     margin-left: 0px;
     margin-right: 10px;
+    margin-top: 10px;
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 10px;
+    color: black;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: white;
+    user-select: none;
+    width: fit-content;
+    outline: none;
+    border: none;
+}
+
+span.officers-incident-input[contenteditable]:empty::before {
+    content: '(XXX) Officer Name';
+}
+
+.officers-incident-input {
+    display: inline-block;
+    text-decoration: none;
+    margin: auto;
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 10px;
+    color: black;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: white;
+    user-select: none;
+    width: fit-content;
+    outline: none;
+    border: none;
+}
+
+span.civilians-incident-input[contenteditable]:empty::before {
+    content: 'Civilian Name';
+}
+
+.civilians-incident-input {
+    display: inline-block;
+    text-decoration: none;
+    margin: auto;
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-top: 10px;
     padding: 4px;
     padding-left: 8px;
     padding-right: 8px;
@@ -2666,7 +2627,6 @@ span.tag-incident-input[contenteditable]:empty::before {
 .associated-incidents-tags-container {
     display: flex;
     flex-direction: column;
-    border: 2px solid rgb(32, 32, 32);
     color: white;
     font-size: 18px;
     font-weight: bolder;
@@ -2938,31 +2898,7 @@ span.tag-incident-input[contenteditable]:empty::before {
     background-color: rgba(0, 0, 0, 0);
 }
 
-.associated-incidents-controls {
-    justify-content: inherit;
-    width: 90%;
-    margin-top: 5px;
-    margin-bottom: 15px;
-}
-
-.control-button {
-    text-align: center;
-    background-color: var(--color-4);
-    border: 2px solid rgb(32, 32, 32);
-    margin-bottom: 10px;
-    padding: 10px;
-}
-
-.control-button span {
-    padding-right: 8px;
-}
-
-.control-button:hover {
-    background-color: var(--color-3);
-    cursor: pointer;
-}
-
-.incidents-person-search {
+.icidents-person-search {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -2970,7 +2906,7 @@ span.tag-incident-input[contenteditable]:empty::before {
     margin-top: 32.5vh;
 }
 
-.incidents-person-search-container {
+.icidents-person-search-container {
     background-color: var(--color-5);
     width: 95vh;
     height: 45vh;
@@ -2981,7 +2917,7 @@ span.tag-incident-input[contenteditable]:empty::before {
     display: none;
 }
 
-.incidents-person-search-title {
+.icidents-person-search-title {
     background-color: var(--color-4);
     color: white;
     font-size: 20px;
@@ -2996,7 +2932,7 @@ span.tag-incident-input[contenteditable]:empty::before {
     user-select: none;
 }
 
-.incidents-person-search-name-title {
+.icidents-person-search-name-title {
     width: 95%;
     margin: auto;
     margin-top: 10px;
@@ -3007,7 +2943,7 @@ span.tag-incident-input[contenteditable]:empty::before {
     user-select: none;
 }
 
-.incidents-person-search-name-input {
+.icidents-person-search-name-input {
     background-color: rgba(0, 0, 0, 0);
     border: none;
     outline: none;
@@ -3020,7 +2956,7 @@ span.tag-incident-input[contenteditable]:empty::before {
     padding-bottom: 2.5px;
 }
 
-.incidents-person-search-holder {
+.icidents-person-search-holder {
     overflow: auto;
     height: 30vh;
     width: 95%;
@@ -3029,18 +2965,18 @@ span.tag-incident-input[contenteditable]:empty::before {
     margin-bottom: 15px;
 }
 
-.incidents-person-search-item {
+.icidents-person-search-item {
     width: 100%;
     height: 12.5vh;
     display: flex;
     flex-direction: row;
 }
 
-.incidents-person-search-item:hover {
+.icidents-person-search-item:hover {
     background-color: var(--color-3);
 }
 
-.incidents-person-search-item-pfp {
+.icidents-person-search-item-pfp {
     width: 11vh;
     height: 11vh;
     margin-top: auto;
@@ -3048,7 +2984,7 @@ span.tag-incident-input[contenteditable]:empty::before {
     margin-left: 10px;
 }
 
-.incidents-person-search-item-right {
+.icidents-person-search-item-right {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -3059,7 +2995,7 @@ span.tag-incident-input[contenteditable]:empty::before {
     height: 11vh;
 }
 
-.incidents-person-search-item-right-cid-title {
+.icidents-person-search-item-right-cid-title {
     width: 100%;
     margin: auto;
     margin-top: 0px;
@@ -3070,7 +3006,7 @@ span.tag-incident-input[contenteditable]:empty::before {
     user-select: none;
 }
 
-.incidents-person-search-item-right-cid-input {
+.icidents-person-search-item-right-cid-input {
     width: 100%;
     margin: auto;
     margin-top: 5px;
@@ -3083,7 +3019,7 @@ span.tag-incident-input[contenteditable]:empty::before {
     user-select: none;
 }
 
-.incidents-person-search-item-right-name-title {
+.icidents-person-search-item-right-name-title {
     width: 100%;
     margin: auto;
     margin-top: auto;
@@ -3094,7 +3030,7 @@ span.tag-incident-input[contenteditable]:empty::before {
     user-select: none;
 }
 
-.incidents-person-search-item-right-name-input {
+.icidents-person-search-item-right-name-input {
     width: 100%;
     margin: auto;
     margin-top: 5px;
@@ -3470,7 +3406,6 @@ span.tag-incident-input[contenteditable]:empty::before {
     width: 95%;
     max-height: 14vh;
     user-select: none;
-    margin-top: 10px;
 }
 
 .officers-add-btn {
@@ -4306,10 +4241,6 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
     background-color: #aa1c1c;
 }
 
-.remove-tag:hover {
-    background-color: #aa1c1c;
-}
-
 .manage-reports-editing-title {
     background-color: var(--color-3);
     color: white;
@@ -4389,7 +4320,6 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
     width: 95%;
     max-height: 14vh;
     user-select: none;
-    margin-top: 10px;
 }
 
 .reports-officers-add-btn {
@@ -4541,7 +4471,6 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
     width: 95%;
     max-height: 14vh;
     user-select: none;
-    margin-top: 10px;
 }
 
 .reports-item {
@@ -4639,6 +4568,55 @@ span.tag-reports-input[contenteditable]:empty::before {
     border: none;
 }
 
+span.officer-tag-reports-input[contenteditable]:empty::before {
+    content: 'Input Tag';
+}
+
+.officer-tag-reports-input {
+    display: inline-block;
+    text-decoration: none;
+    margin: auto;
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 10px;
+    color: black;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: white;
+    user-select: none;
+    width: fit-content;
+    outline: none;
+    border: none;
+}
+
+span.civilian-tag-reports-input[contenteditable]:empty::before {
+    content: 'Input Tag';
+}
+
+.civilian-tag-reports-input {
+    display: inline-block;
+    text-decoration: none;
+    margin: auto;
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 10px;
+    color: black;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: white;
+    user-select: none;
+    width: fit-content;
+    outline: none;
+    border: none;
+}
 
 .dmv-container {
     background-color: var(--color-1);
@@ -4978,7 +4956,6 @@ span.tag-reports-input[contenteditable]:empty::before {
 .vehicle-info-tags-container {
     display: flex;
     flex-direction: column;
-    border: 2px solid rgb(32, 32, 32);
     color: white;
     font-size: 18px;
     font-weight: bolder;
@@ -5106,47 +5083,8 @@ span.tag-reports-input[contenteditable]:empty::before {
     flex-direction: column;
     height: 72.7vh;
     width: 100%;
-    margin-top: 2px;
-    margin-left: 1px;
-    margin-right: 1px;
-    overflow: auto;
-}
-
-.stafflogs-box > p {
-    color: white;
-    font-size: 1.3vh;
-    padding-left: 1vh;
-}
-
-.stafflogs-box-title {
-    align-self: center;
-    background-color: var(--color-4);
-    color: white;
-    font-size: 18px;
-    font-weight: bolder;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    text-align: center;
-    margin: auto;
     margin-top: 10px;
-    margin-bottom: 0px;
     margin-left: 10px;
-    margin-right: 10px;
-    width: 97.5%;
-    height: 25px;
-    align-items: center;
-    user-select: none;
-}
-
-.leaderboard-container {
-    background-color: var(--color-1);
-    border: 2px solid rgb(32, 32, 32);
-    display: flex;
-    flex-direction: column;
-    height: 80.7vh;
-    width: 33%;
-    margin-top: 10px;
-    margin-left: 4px;
     margin-right: 10px;
     overflow: auto;
 }
@@ -5155,59 +5093,6 @@ span.tag-reports-input[contenteditable]:empty::before {
     color: white;
     font-size: 1.3vh;
     padding-left: 1vh;
-}
-
-
-.leaderboard-container {
-    background-color: var(--color-1);
-    border: 2px solid var(--color-3);
-    display: flex;
-    flex-direction: column;
-    height: 74.7vh;
-    width: 33%;
-    margin-top: 10px;
-    margin-left: 4px;
-    margin-right: 10px;
-    overflow: auto;
-}
-
-.leaderboard-box {
-    display: flex;
-    flex-direction: column;
-    height: 74.7vh;
-    width: 100%;
-    margin-top: 2px;
-    margin-left: 1px;
-    margin-right: 1px;
-    overflow: auto;
-}
-
-.leaderboard-box-test {
-    margin: 0; 
-    padding-top:0.8vh;
-    color: white;
-    font-size: 1.3vh;
-    padding-left: 1vh;
-}
-
-.leaderboard-title {
-    align-self: center;
-    background-color: var(--color-4);
-    color: white;
-    font-size: 18px;
-    font-weight: bolder;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    text-align: center;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 95.5%;
-    height: 25px;
-    align-items: center;
-    user-select: none;
 }
 
 /* Vehicle Colors :( so long lol */
@@ -5309,19 +5194,7 @@ span.tag-reports-input[contenteditable]:empty::before {
     background-color: #950909;
 }
 
-.incidents-delete:hover {
-    background-color: #950909;
-}
-
 .bolo-delete:hover {
-    background-color: #950909;
-}
-
-.weapons-delete:hover {
-    background-color: #950909;
-}
-
-.reports-delete:hover {
     background-color: #950909;
 }
 
@@ -5974,6 +5847,7 @@ span.tag-reports-input[contenteditable]:empty::before {
     flex-direction: column;
     z-index: 9998;
     overflow: auto;
+    
 }
 
 .respond-calls-title {
@@ -6168,13 +6042,12 @@ span.tag-reports-input[contenteditable]:empty::before {
     overflow: auto
 }
 
-
 .cams-container {
     background-color: var(--color-1);
     border: 2px solid rgb(32, 32, 32);
     display: flex;
     flex-direction: column;
-    height: 80.7vh;
+    height: 72.7vh;
     width: 100%;
     margin-top: 10px;
     margin-left: 10px;
@@ -6720,12 +6593,14 @@ input[type="range"].vehicle-info-points-input::-moz-range-track {
 }
 
 
+
+
 .calls-container {
     background-color: var(--color-1);
     border: 2px solid rgb(32, 32, 32);
     display: flex;
     flex-direction: column;
-    height: 72.3vh;
+    height: 72.7vh;
     width: 30%;
     margin-top: 10px;
     margin-left: 10px;
@@ -6749,35 +6624,6 @@ input[type="range"].vehicle-info-points-input::-moz-range-track {
 
 .calls-search-title:hover {
     background-color: var(--color-3);
-}
-
-.calls-search-input {
-    background-color: var(--color-3);
-    color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    width: 95%;
-    align-items: center;
-    user-select: none;
-    display: none;
-}
-
-#calls-search-input {
-    outline: none;
-    border: none;
-    width: 95%;
-    color: white;
-    font-size: 15px;
-    background-color: rgba(0, 0, 0, 0);
-    margin: auto;
-}
-
-#calls-search-input::placeholder {
-    color: white;
 }
 
 .map-container {
